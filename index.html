@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container header">
+            <div  class="date">
+                <script>
+                    document.querySelector('.date').innerHTML = Date();
+                </script>
+            </div>
+            <input type="text" name="todo-input" class="todo-input" placeholder="Take a garbage out" >
+            <button class="add-todo">+</button>
+        </div>
+        <div class="container todos">
+        </div>
+        <div class="container completedtodos">Teljesített todos</div>
+        <div class="container footer">Lábléc</div>
+    </div>
+    
+    <script src="todo.js"></script>
+</body>
+</html>
